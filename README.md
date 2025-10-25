@@ -10,7 +10,7 @@
 
 The CCS811 is an ultra-low power digital gas sensor solution which integrates a metal oxide (MOX) gas sensor to detect a wide range of Volatile Organic Compounds (VOCs) for indoor air quality monitoring with a microcontroller unit (MCU), which includes an Analog-to-Digital converter (ADC), and an I²C interface. CCS811 is based on ams unique micro-hotplate technology which enables a highly reliable solution for gas sensors, very fast cycle times and a significant reduction in average power consumption. The integrated MCU manages the sensor drive modes and raw sensor data measured while detecting VOCs. The I²C digital interface significantly simplifies the hardware and software design, enabling a faster time to market. CCS811 supports intelligent algorithms to process raw sensor measurements to output a TVOC value or equivalent CO2 (eCO2) levels, where the main cause of VOCs is from humans. CCS811 supports multiple measurement modes that have been optimized for low-power consumption during an active sensor measurement and idle mode extending battery life in portable applications. CCS811 is available in a 10 lead 2.7mm x 4.0mm x 1.1mm, 0.6mm pitch LGA package.
 
-LibDriver CCS811 is a full-featured driver of CCS811 launched by LibDriver.It provides TVOC, eCO2 reading, temperature and humidity correction and other functions. LibDriver is MISRA compliant.
+LibDriver CCS811 is a full-featured driver for CCS811, launched by LibDriver.It provides TVOC reading, eCO2 reading, temperature correction, humidity correction and additional features. LibDriver is MISRA compliant.
 
 ### Table of Contents
 

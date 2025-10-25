@@ -1,8 +1,9 @@
 var searchData=
 [
-  ['mainpage_2eh_206',['mainpage.h',['../mainpage_8h.html',1,'']]],
-  ['manufacturer_5fname_207',['manufacturer_name',['../structccs811__info__s.html#ad25285dbf810c90f8eaf3fcef6f2b2ea',1,'ccs811_info_s']]],
-  ['manufacturer_5fname_208',['MANUFACTURER_NAME',['../driver__ccs811_8c.html#aaa2b8f5b105c3019df0cb346f472e803',1,'driver_ccs811.c']]],
-  ['max_5fcurrent_209',['MAX_CURRENT',['../driver__ccs811_8c.html#a2989837a37d6d63b59c6dd541b785435',1,'driver_ccs811.c']]],
-  ['max_5fcurrent_5fma_210',['max_current_ma',['../structccs811__info__s.html#a9db82802561bf22d799b03a345f1d1dc',1,'ccs811_info_s']]]
+  ['gpio_5freset_5fdeinit_0',['gpio_reset_deinit',['../structccs811__handle__s.html#a0fa6447866c301420028ce83fbaeeca3',1,'ccs811_handle_s']]],
+  ['gpio_5freset_5finit_1',['gpio_reset_init',['../structccs811__handle__s.html#ade6949465fb2262905a4152fa7663f5e',1,'ccs811_handle_s']]],
+  ['gpio_5freset_5fwrite_2',['gpio_reset_write',['../structccs811__handle__s.html#aa1e29fde0234e2583e180314ef8a0e73',1,'ccs811_handle_s']]],
+  ['gpio_5fwake_5fdeinit_3',['gpio_wake_deinit',['../structccs811__handle__s.html#a3884894f2fc00cf7b7e68288fc2fbfc4',1,'ccs811_handle_s']]],
+  ['gpio_5fwake_5finit_4',['gpio_wake_init',['../structccs811__handle__s.html#a21ac4828436c48ccca1006aacaad007f',1,'ccs811_handle_s']]],
+  ['gpio_5fwake_5fwrite_5',['gpio_wake_write',['../structccs811__handle__s.html#a25c3f28cc71cf89575b1951dcb7fea62',1,'ccs811_handle_s']]]
 ];
