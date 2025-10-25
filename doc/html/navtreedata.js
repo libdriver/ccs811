@@ -25,7 +25,7 @@
 var NAVTREE =
 [
   [ "LibDriver CCS811", "index.html", [
-    [ "Modules", "modules.html", "modules" ],
+    [ "Topics", "topics.html", "topics" ],
     [ "Data Structures", "annotated.html", [
       [ "Data Structures", "annotated.html", "annotated_dup" ],
       [ "Data Structure Index", "classes.html", null ],
@@ -51,8 +51,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"group__ccs811__base__driver.html#ggadd4cd91ac7b3efa8b16a12d6d00e54e6afec8c7d4df103aa95e9e3f3754d8d1e7"
+"structccs811__handle__s.html#af6963bbad902ca6e43942b48c07986c3"
 ];
 
-var SYNCONMSG = 'click to disable panel synchronisation';
-var SYNCOFFMSG = 'click to enable panel synchronisation';
+var SYNCONMSG = 'click to disable panel synchronization';
+var SYNCOFFMSG = 'click to enable panel synchronization';
+var LISTOFALLMEMBERS = 'List of all members';
