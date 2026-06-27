@@ -823,8 +823,8 @@ uint8_t ccs811_get_firmware_bootloader_version(ccs811_handle_t *handle, uint8_t 
         
         return 1;                                                               /* return error */
     }
-    *major = (buf[0] >> 4) & 0xFF;                                              /* set major */
-    *minor = (buf[0] >> 0) & 0xFF;                                              /* set minor */
+    *major = (buf[0] >> 4) & 0x0F;                                              /* set major */
+    *minor = (buf[0] >> 0) & 0x0F;                                              /* set minor */
     *trivial = buf[1];                                                          /* set trivial */
     
     return 0;                                                                   /* success return 0 */
@@ -864,8 +864,8 @@ uint8_t ccs811_get_firmware_application_version(ccs811_handle_t *handle, uint8_t
         
         return 1;                                                              /* return error */
     }
-    *major = (buf[0] >> 4) & 0xFF;                                             /* set major */
-    *minor = (buf[0] >> 0) & 0xFF;                                             /* set minor */
+    *major = (buf[0] >> 4) & 0x0F;                                             /* set major */
+    *minor = (buf[0] >> 0) & 0x0F;                                             /* set minor */
     *trivial = buf[1];                                                         /* set trivial */
     
     return 0;                                                                  /* success return 0 */
@@ -1097,7 +1097,7 @@ uint8_t ccs811_app_start(ccs811_handle_t *handle)
             
             return 1;                                                          /* return error */
         }
-        if ((status & (1 << 4)) != 0)                                          /* check flag */
+        if ((status & (1 << 7)) != 0)                                          /* check flag */
         {
             return 0;                                                          /* success return 0 */
         }
