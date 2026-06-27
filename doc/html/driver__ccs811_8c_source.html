@@ -684,8 +684,8 @@ $(function(){initNavTree('driver__ccs811_8c_source.html','',''); });
 <div class="line"><a id="l00823" name="l00823"></a><span class="lineno">  823</span>        </div>
 <div class="line"><a id="l00824" name="l00824"></a><span class="lineno">  824</span>        <span class="keywordflow">return</span> 1;                                                               <span class="comment">/* return error */</span></div>
 <div class="line"><a id="l00825" name="l00825"></a><span class="lineno">  825</span>    }</div>
-<div class="line"><a id="l00826" name="l00826"></a><span class="lineno">  826</span>    *major = (buf[0] &gt;&gt; 4) &amp; 0xFF;                                              <span class="comment">/* set major */</span></div>
-<div class="line"><a id="l00827" name="l00827"></a><span class="lineno">  827</span>    *minor = (buf[0] &gt;&gt; 0) &amp; 0xFF;                                              <span class="comment">/* set minor */</span></div>
+<div class="line"><a id="l00826" name="l00826"></a><span class="lineno">  826</span>    *major = (buf[0] &gt;&gt; 4) &amp; 0x0F;                                              <span class="comment">/* set major */</span></div>
+<div class="line"><a id="l00827" name="l00827"></a><span class="lineno">  827</span>    *minor = (buf[0] &gt;&gt; 0) &amp; 0x0F;                                              <span class="comment">/* set minor */</span></div>
 <div class="line"><a id="l00828" name="l00828"></a><span class="lineno">  828</span>    *trivial = buf[1];                                                          <span class="comment">/* set trivial */</span></div>
 <div class="line"><a id="l00829" name="l00829"></a><span class="lineno">  829</span>    </div>
 <div class="line"><a id="l00830" name="l00830"></a><span class="lineno">  830</span>    <span class="keywordflow">return</span> 0;                                                                   <span class="comment">/* success return 0 */</span></div>
@@ -714,8 +714,8 @@ $(function(){initNavTree('driver__ccs811_8c_source.html','',''); });
 <div class="line"><a id="l00864" name="l00864"></a><span class="lineno">  864</span>        </div>
 <div class="line"><a id="l00865" name="l00865"></a><span class="lineno">  865</span>        <span class="keywordflow">return</span> 1;                                                              <span class="comment">/* return error */</span></div>
 <div class="line"><a id="l00866" name="l00866"></a><span class="lineno">  866</span>    }</div>
-<div class="line"><a id="l00867" name="l00867"></a><span class="lineno">  867</span>    *major = (buf[0] &gt;&gt; 4) &amp; 0xFF;                                             <span class="comment">/* set major */</span></div>
-<div class="line"><a id="l00868" name="l00868"></a><span class="lineno">  868</span>    *minor = (buf[0] &gt;&gt; 0) &amp; 0xFF;                                             <span class="comment">/* set minor */</span></div>
+<div class="line"><a id="l00867" name="l00867"></a><span class="lineno">  867</span>    *major = (buf[0] &gt;&gt; 4) &amp; 0x0F;                                             <span class="comment">/* set major */</span></div>
+<div class="line"><a id="l00868" name="l00868"></a><span class="lineno">  868</span>    *minor = (buf[0] &gt;&gt; 0) &amp; 0x0F;                                             <span class="comment">/* set minor */</span></div>
 <div class="line"><a id="l00869" name="l00869"></a><span class="lineno">  869</span>    *trivial = buf[1];                                                         <span class="comment">/* set trivial */</span></div>
 <div class="line"><a id="l00870" name="l00870"></a><span class="lineno">  870</span>    </div>
 <div class="line"><a id="l00871" name="l00871"></a><span class="lineno">  871</span>    <span class="keywordflow">return</span> 0;                                                                  <span class="comment">/* success return 0 */</span></div>
@@ -903,7 +903,7 @@ $(function(){initNavTree('driver__ccs811_8c_source.html','',''); });
 <div class="line"><a id="l01097" name="l01097"></a><span class="lineno"> 1097</span>            </div>
 <div class="line"><a id="l01098" name="l01098"></a><span class="lineno"> 1098</span>            <span class="keywordflow">return</span> 1;                                                          <span class="comment">/* return error */</span></div>
 <div class="line"><a id="l01099" name="l01099"></a><span class="lineno"> 1099</span>        }</div>
-<div class="line"><a id="l01100" name="l01100"></a><span class="lineno"> 1100</span>        <span class="keywordflow">if</span> ((status &amp; (1 &lt;&lt; 4)) != 0)                                          <span class="comment">/* check flag */</span></div>
+<div class="line"><a id="l01100" name="l01100"></a><span class="lineno"> 1100</span>        <span class="keywordflow">if</span> ((status &amp; (1 &lt;&lt; 7)) != 0)                                          <span class="comment">/* check flag */</span></div>
 <div class="line"><a id="l01101" name="l01101"></a><span class="lineno"> 1101</span>        {</div>
 <div class="line"><a id="l01102" name="l01102"></a><span class="lineno"> 1102</span>            <span class="keywordflow">return</span> 0;                                                          <span class="comment">/* success return 0 */</span></div>
 <div class="line"><a id="l01103" name="l01103"></a><span class="lineno"> 1103</span>        }</div>
